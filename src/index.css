@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
 }
 
 code {
@@ -14,13 +15,31 @@ code {
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color:cadetblue;
-  color: white;
+  background-color:cornflowerblue;
+  color:azure;
   padding: 15px;
   font-size: 2em;
 }
 
 .nav a {
-  color: white;
+  color:whitesmoke;
   text-decoration: none;
+}
+
+.tab{
+  margin-right: 80px;
+  border: none;
+  color:black;
+}
+  table {
+    
+    border: 1px solid black;
+  } 
+
+
+
+tr,th{
+  table-layout:fixed;
+  width: 50%;
+
 }

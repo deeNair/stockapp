@@ -6,23 +6,15 @@ import { Link } from "react-router-dom";
 
 function Dashboard(){
    const params=useParams();
-    //console.log(params.symbol);
-    //const symbol= params.symbol;
-    const result=stocks.map((item)=>{
-        //if(item.symbol === params.symbol)
-        return(
-            
-            
-            <h1>{item.symbol}</h1>
-        )
-    });
-
-    //const result=stocks.find(item=>item.symbol===params.symbol)
+    
+        
+    const result=stocks.find(item=>item.symbol===params.symbol)
    
 
     return (
         <div>
-    <h2>Symbol :{result}</h2>
+    <h2>Symbol :{result.symbol}</h2>
+    <h2>Last Price:{result.lastPrice}</h2>
     </div>
     )
 }
